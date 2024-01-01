@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 10px;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #d042e2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #9667cc;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        main {
+            flex: 1;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #d042e2;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>This is the main content of my website.</p>
+        <button onclick="startCountdown()">Start Countdown</button>
+        <p id="countdown"></p>
+        <input type="file" id="fileInput" onchange="handleFileUpload()">
+        <p id="uploadedFileName"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="countdown.js"></script>
+</body>
+</html>
